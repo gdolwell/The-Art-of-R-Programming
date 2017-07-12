@@ -1,0 +1,44 @@
+Notes Associated with The Art of R programming Chapter 1.
+
+
+#run file_name.R from the command line
+R CMD BATCH file_name.R
+
+
+#mean
+mean()
+
+#standard deviation
+sd()
+
+
+# list of shipped data sets
+data()
+
+
+#example of a user defined function
+> oddcount <-  function(x){
++     k<-0
++     for (n in x) {
++         if (n%%2) k<-k+1
++     }
++     return(k)
++ }
+
+#vectors must all have the same mode (data type)
+
+
+#create a matrix (row bind)
+m <- rbind(c(1,2),c(3,4))
+
+#matrix multiplication
+%*%
+
+#explore structure
+str(histNile)
+
+#working directory
+getwd()
+setwed()
+
+
